@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Modal Example</title>
+	<link rel="stylesheet" type="text/css" href="../stylesheets/modal.css"/>
+	<!--<script type="text/javascript" src="live.js"></script>-->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+	<script type="text/javascript" src="../vendor/fidel.js"></script>
+	<script type="text/javascript" src="../lib/modal.js"></script>
+</head>
+<body>
+	<div id="images">
+		<a data-action="showImage" data-image="http://simplycatbreeds.org/images/Kitten.jpg">
+			<img src="http://simplycatbreeds.org/images/Kitten.jpg" width="150"/>
+		</a>
+		<a data-action="showImage" data-image="http://images.pictureshunt.com/pics/k/kitten-8370.jpg">
+			<img src="http://images.pictureshunt.com/pics/k/kitten-8370.jpg" width="150"/>
+		</a>
+
+	</div>
+	<script>
+		var m = new Fidel.Modal({ el: $('#images') });
+		setTimeout(function() {
+			$("#images img:eq(0)").click();
+		}, 500);
+	</script>
+</body>
+</html>
