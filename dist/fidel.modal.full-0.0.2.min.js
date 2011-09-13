@@ -1,6 +1,6 @@
 /*!
   * Fidel Modal - A basic modal for the fidel library
-  * v0.0.1
+  * v0.0.2
   * https://github.com/jgallen23/fidel-modal
   * copyright JGA 2011
   * MIT License

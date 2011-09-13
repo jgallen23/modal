@@ -1,6 +1,7 @@
 {
+  "VERSION": "0.0.2",
   "JAVASCRIPT": {
-    "DIST_DIR": "./",
+    "DIST_DIR": "./dist/",
     "fidel.modal": [
       "./lib/copyright.js",
       "./lib/modal.js"
@@ -9,6 +10,12 @@
       "./lib/copyright.js",
       "./vendor/fidel.js",
       "./lib/modal.js"
+    ]
+  },
+  "CSS": {
+    "DIST_DIR": "./dist/",
+    "fidel.modal": [
+      "./stylesheets/modal.css"
     ]
   },
   "JSHINT_OPTS": {
