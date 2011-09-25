@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Modal Example</title>
+	<link rel="stylesheet" type="text/css" href="../stylesheets/copyright.css"/>
+	<link rel="stylesheet" type="text/css" href="../stylesheets/modal.css"/>
+	<script type="text/javascript" src="live.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+	<script type="text/javascript" src="../vendor/fidel.js"></script>
+	<script type="text/javascript" src="../lib/modal.js"></script>
+	<style>
+		#container { display: none; padding: 20px; color: #000; background: #fff; width: 200px; text-align: center; }
+	</style>
+</head>
+<body>
+	<div id="container">
+		<p>This is text</p>
+		<p>This is more text</p>
+		<img src="http://simplycatbreeds.org/images/Kitten.jpg" width="150"/>
+	</div>
+	<div id="widget">
+		<button data-action="showModal" data-modal="container">Show</button>
+	</div>
+	<script>
+		var m = new Fidel.Modal({ el: $('#widget') });
+		setTimeout(function() {
+			$("#widget button").click();
+		}, 500);
+	</script>
+</body>
+</html>

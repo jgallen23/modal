@@ -1,5 +1,4 @@
 {
-  "VERSION": "0.0.3",
   "JAVASCRIPT": {
     "DIST_DIR": "./dist/",
     "fidel.modal": [
@@ -15,6 +14,7 @@
   "CSS": {
     "DIST_DIR": "./dist/",
     "fidel.modal": [
+      "./stylesheets/copyright.css",
       "./stylesheets/modal.css"
     ]
   },

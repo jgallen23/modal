@@ -1,5 +1,6 @@
 boosh:
 	smoosh make ./build.json
+	cp images/* dist/
 
 clean:
 	rm -rf dist
