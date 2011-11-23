@@ -4,11 +4,6 @@
     "fidel.modal": [
       "./lib/copyright.js",
       "./lib/modal.js"
-    ],
-    "fidel.modal.full": [
-      "./lib/copyright.js",
-      "./vendor/fidel.js",
-      "./lib/modal.js"
     ]
   },
   "CSS": {

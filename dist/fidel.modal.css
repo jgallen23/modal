@@ -1,44 +1,42 @@
 /*
-  * Fidel Modal - A basic modal for the fidel library
-  * v0.0.4
-  * https://github.com/jgallen23/fidel.modal
+  * Modal - A basic modal
+  * v0.0.5
+  * https://github.com/jgallen23/modal
   * copyright JGA 2011
   * MIT License
   */
 
-#FidelModalOverlay { 
+#ModalOverlay { 
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-    /*background-image: url(../images/fidel.modal.bg.png); uncommment for IE support */
+  /*background-image: url(../images/.modal.bg.png); uncommment for IE support */
 	background-color: rgba(0, 0, 0, .9);
 	z-index: 1000;
 	opacity: 0;
-	-webkit-transition: opacity 0.3s ease-out;
-}
-#FidelModalOverlay.zoom {
-	opacity: 1;
-}
-#FidelModalOverlay.normal { 
+	-moz-transition: opacity 0.5s ease-out;
+	-webkit-transition: opacity 0.5s ease-out;
 }
 
-#FidelModalOverlay div {
+#ModalOverlay div {
 	height: 100%;
 	width: 100%;
 	background-repeat: no-repeat;
 	background-position: center center;
-	-moz-transition: all 0.3s ease-out;
+}
+.ModalNone {
+	-moz-transition: all 0.2s ease-out;
 	-moz-transform: scale(0);
-	-webkit-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.2s ease-out;
 	-webkit-transform: scale(0);
 }
-#FidelModalOverlay.zoom div {
-	-moz-transform: scale(1.0);
+.ModalZoom {
+	-moz-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 }
-#FidelModalOverlay.normal div {
+.ModalNormal {
 	-moz-transform: scale(1.0);
 	-webkit-transform: scale(1.0);
 }
