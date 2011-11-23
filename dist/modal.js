@@ -56,11 +56,25 @@ Fidel.Modal = Fidel.ViewController.extend({
 */
 var id = 'ModalOverlay';
 var overlay = null;
+var options = {
+  'backgroundColor': 'rgba(0,0,0,.9)'
+  //'background-color': 'rgba(98,102,109,.8)', //tmp for KS
+};
 
 var showOverlay = function() {
   if (overlay)
     overlay.remove();
   overlay = $('<div id="'+id+'"><div></div></div>');
+  overlay.css({
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    'background-color': options.backgroundColor,
+    'z-index': 1000,
+    opacity: 0
+  });
   overlay.bind('click', close);
   overlay.appendTo('body');
   return overlay;
@@ -103,6 +117,7 @@ var showInline = function($node) {
 var showiFrame = function(elem) {
   var src = elem.attr('href');
   var $node = $("<iframe/>")
+      .addClass('ModalContainer')
       .attr('src', src)
       .css('border', 0);
   if (elem.attr('data-modal-size')) {
@@ -148,5 +163,6 @@ $(function() {
 //public
 var modal = {
   attach: attach,
-  close: close
+  close: close,
+  options: options
 };

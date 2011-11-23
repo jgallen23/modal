@@ -1,14 +1,14 @@
 {
   "JAVASCRIPT": {
     "DIST_DIR": "./dist/",
-    "fidel.modal": [
+    "modal": [
       "./lib/copyright.js",
       "./lib/modal.js"
     ]
   },
   "CSS": {
     "DIST_DIR": "./dist/",
-    "fidel.modal": [
+    "modal": [
       "./stylesheets/copyright.css",
       "./stylesheets/modal.css"
     ]
