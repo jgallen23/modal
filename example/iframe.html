@@ -13,19 +13,10 @@
 	</style>
 </head>
 <body>
-	<div id="container">
-    <a href="#" data-modal-close>Close</a> 
-		<p>This is text</p>
-		<p>This is more text</p>
-		<img src="shuttle3.png" width="150"/>
-	</div>
-	<div id="widget">
-		<button data-modal="inline" data-modal-container="#container">Show</button>
-	</div>
+  <a data-modal="iframe" data-modal-size="300x250" href="iframe-frame.html">Show</button>
 	<script>
-		//var m = modal.attach([');
 		setTimeout(function() {
-			$("#widget button").click();
+			$("a").click();
 		}, 1000);
 	</script>
 </body>
